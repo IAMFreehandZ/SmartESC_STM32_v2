@@ -17,7 +17,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
     */
 
-
 #ifndef CONF_GENERAL_H_
 #define CONF_GENERAL_H_
 
