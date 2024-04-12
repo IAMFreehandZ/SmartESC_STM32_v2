@@ -59,7 +59,7 @@
 #define HW_LIM_F_SW			    4000.0, 20000.0
 
 #define MOT_TMR_MHZ 64
-#define HEAP_SIZE_KB 14
+#define HEAP_SIZE_KB 13
 #define CPU_MHZ  (64*1000000)
 #define APP_PAGE				126
 #define CONF_PAGE				127
