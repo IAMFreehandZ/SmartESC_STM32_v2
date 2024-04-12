@@ -175,7 +175,7 @@
 /****************************************************************************/
 
 #define KMH_NO_LIMIT														 1337
-#define PRODUCT_FIRMWARE_VERSION                                      		 0b110
+#define PRODUCT_FIRMWARE_VERSION                                      		 0b111110
 #define VESC_TOOL_ENABLE													 1
 #define AUTO_RESET_FAULT													 1
 #define ERROR_PRINTING														 1
