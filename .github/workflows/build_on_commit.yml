@@ -30,15 +30,15 @@ jobs:
         # enable workflow command processing
         echo "::`echo -n ${{ github.token }} | sha256sum | head -c 64`::"
         
-    - name: 'Build M365'
+    - name: 'Build G30P'
       uses: docker://wsbu/stm32cubeide:latest
       with:
         entrypoint: /opt/stm32cubeide/stm32cubeide
         args: --launcher.suppressErrors -nosplash -application org.eclipse.cdt.managedbuilder.core.headlessbuild -build g30p/Debug -importAll /github/workspace/
     
-    - name: 'Upload Artifact M365 - with build number'
+    - name: 'Upload Artifact G30P - with build number'
       uses: actions/upload-artifact@v2
       with:
-        path: ${{ github.workspace }}/m365/STM32CubeIDE/Debug/m365.bin
+        path: ${{ github.workspace }}/g30p/STM32CubeIDE/Debug/g30p.bin
         name: ${{ github.run_number }}
         retention-days: 5
